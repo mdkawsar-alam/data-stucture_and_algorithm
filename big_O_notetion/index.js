@@ -40,13 +40,27 @@
   
 
 //  use while loop
-     const  logarithmN=(n)=>{
-        while (n>1) {
-             console.log(n)
-             n/=2;
+    //  const  logarithmN=(n)=>{
+        // while (n>1) {
+            //  console.log(n)
+            //  n/=2;
+            // 
+        // }
+        // console.log('done');
+        // 
+    //  }
+    //   logarithmN(25);
+
+    // recursive function user
+      const logarithmN=(n)=>{
+         if (n<=1) {
+            console.log('done');
             
-        }
-        console.log('done');
-        
-     }
-      logarithmN(25);
+            return
+
+         }
+         console.log(n);
+         
+         logarithmN(n/2)
+      } 
+ logarithmN(10);
